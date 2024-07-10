@@ -15,6 +15,7 @@ bimm_init <- function(data_train,
       ranger::ranger(
         formula = formula,
         data = data_train,
+        min.node.size = 50,
         probability = TRUE
       )
 
